@@ -119,7 +119,7 @@ street           0.909    0.914    0.911      501
 
 1. **Transfer Learning Wins**: ResNet-18 with pretrained weights achieved 93.80% accuracy compared to 89.25% for the baseline CNN on full data (4.55% improvement)
 
-2. **Efficiency Matters**: Transfer learning with ResNet-18 reached target accuracy in just 3.7 minutes vs 31.8 minutes for the baseline CNN from scratch
+2. **Efficiency Matters**: Transfer learning with ResNet-18 reached target accuracy in just 3.7 minutes vs 31.8 minutes for the baseline CNN on full dataset
 
 3. **Strong Baseline**: Even the custom SimpleConvNet achieved over 90% accuracy, demonstrating that well-designed architectures can perform excellently without transfer learning
 
@@ -176,7 +176,7 @@ pillow
 - Transfer learning provides significant benefits for image classification tasks
 - Proper data augmentation and regularization are crucial for generalization
 - Even custom architectures can achieve strong results with careful design
-- Training time can vary dramatically - ResNet-18 transfer learning (3.7 min) was over 8x faster than baseline CNN (31.8 min) to reach comparable accuracy
+- Training time can vary dramatically - ResNet-18 transfer learning (3.7 min) was over 8x faster than baseline CNN (31.8 min) while achieving higher accuracy (93.80% vs 89.25%)
 
 ## Future Work
 
